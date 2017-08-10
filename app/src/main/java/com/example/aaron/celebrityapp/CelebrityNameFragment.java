@@ -1,6 +1,7 @@
 package com.example.aaron.celebrityapp;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -129,7 +130,14 @@ public class CelebrityNameFragment extends Fragment implements AdapterView.OnIte
         //tvCelebrityName.setText(mParam1);
         celebNames = getResources().getStringArray(R.array.celebrity_names);
         lvCelebNames = view.findViewById(R.id.lvCelebNames);
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(view.getContext(), layout.simple_list_item_1,celebNames);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(view.getContext(), layout.simple_list_item_1,celebNames){
+            @Override
+            public View getView(int position, View convertView, ViewGroup parent) {
+                TextView textView = (TextView) super.getView(position, convertView, parent);
+                textView.setTextColor(Color.YELLOW);
+                return textView;
+            }
+        };
         lvCelebNames.setAdapter(adapter);
 
 
