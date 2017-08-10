@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Star Trek Actors and Character</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="celebrity_names">
+        <item>Patrick Stewart</item>
+        <item>Brent Spiner</item>
+        <item> Jonathan Frakes</item>
+        <item>LeVar Burton</item>
+        <item>Michael Dorn</item>
+    </string-array>
+
+    <string name="patrickstewart">Captian Picard</string>
+    <string name="brentspiner">Data</string>
+    <string name="jonathanfrakes">William Riker</string>
+    <string name="levarburton">Geordi La Forge</string>
+    <string name="michaeldorn">Worf</string>
+</resources>
